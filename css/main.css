@@ -1,8 +1,12 @@
 
 body {
-
+  margin: 0;
   font-family: 'Open Sans', sans-serif;
-
+  font-size: 1em;
+  background-image: url("https://static1.squarespace.com/static/58b481f0d2b857c893183a60/t/59ce4e4fd55b41fadb48d0a6/1506692691847/Banner+Shoes.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 ul {
@@ -11,29 +15,42 @@ ul {
   padding: 0;
   margin: 0;
   overflow: hidden;
+  background-color: rgb(213,223,77);
+  height: 10%;
+  display: flex;
 }
 
 li {
 
-float: left;
+margin: auto;
+
 
 }
 
 li a {
 
-  padding: 10px;
-  background-color: lime;
+
   text-align: center;
   display: block;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.3em;
+  align-items: flex-end;
+  letter-spacing: .3em;
 
 }
 
-h1 {
+.row {
+  display: flex;
 
-  clear: both;
+}
+
+.column {
+    width: 80%;
+    height: 75%;
+    margin: 5% 5% 0 5%;
+    border-color: red;
+    border-style: solid;
 
 }

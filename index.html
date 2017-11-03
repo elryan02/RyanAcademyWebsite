@@ -1,16 +1,15 @@
 <html>
   <head>
-
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
     <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
-
   </head>
 
   <body>
 
+    <!-- navigation -->
     <ul>
       <li><a href="gmail.com">home</a></li>
       <li><a href="gmail.com">mission</a></li>
@@ -19,28 +18,71 @@
       <li><a href="gmail.com">register</a></li>
     </ul>
 
-
     <div id="overlay">
+      <div class="primary">
 
-    <div class="row">
-
-      <div class="primary col">
         <h1>the ryan academy</h1>
+
         <h2>fostering integrity. preserving tradition.</h2>
-        <button class="button button1">register now!</button>
 
-      </div>
+        <!-- Trigger/Open The Modal -->
+        <button class="button button1" id="regBtn">register now</button>
+
+        <!-- modal -->
+        <div id="formModal" class="modal">
+
+        <!-- form -->
+          <div class="regForm">
+          <span class="formClose">&times;</span>
+          <form action="index.html" method="post">
+
+            <h3>dancer name</h3>
+            <input type="text" id="firstName" placeholder="first name">
+            <input type="text" id="lastName" placeholder="last name">
+
+            <h3>gender</h3>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+
+            <h3>dancer D.O.B</h3>
+            <input type="date" id="bday">
+
+            <h3>Class Selection</h3>
+            <select name="classes">
+            <option value="beginnerFive">Beginner (5+)</option>
+            <option value="beginnerFourteen">Beginner (14+)</option>
+            <option value="intermediate">Intermediate (instructor approval)</option>
+            <option value="freeTrial">Free Trial</option>
+            </select>
+
+            <h3>parent/guardian name</h3>
+            <input type="text" id="firstName" placeholder="first name">
+            <input type="text" id="lastName" placeholder="last name">
+
+            <h3>parent/guardian D.O.B</h3>
+            <input type="date" id="bday">
+
+            <h3>address</h3>
+            <input type="text" id="addressOne" placeholder="address 1"><br><br>
+            <input type="text" id="addressTwo" placeholder="address 2"><br><br>
+            <input type="text" id="city" placeholder="city">
+            <input type="text" id="state" placeholder="state"><br><br>
+            <input type="text" id="postal" placeholder="zip/postal code">
+            <input type="text" id="country" placeholder="country">
+
+            <h3>Phone</h3>
+            <input type="tel" id="phone" placeholder="(555) 555-555">
+          </form>
+          </div>
+
+</div>
 
 
 
-    </div>
-    </div>
 
 
-
-
+    </div> <!-- overlay div -->
 
   </body>
-
-
 </html>

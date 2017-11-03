@@ -31,11 +31,15 @@ h2 {
 }
 
 h3 {
-  color: white;
-  text-shadow: 4px 4px 8px #000000;
+  color: #d5df4d;
   font-weight: bold;
   font-size: 1em;
-  margin-bottom: -.001px;
+}
+
+h4 {
+  color: #d5df4d;
+  font-weight: bold;
+  font-size: 2em;
 }
 
 /****************************
@@ -89,8 +93,9 @@ CONTAINERS
 BUTTON
 ***************************/
 
+
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 20px 28px;
@@ -99,15 +104,14 @@ BUTTON
     display: inline-block;
     font-size: 20px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
-
 }
 
 .button1 {
     background-color: transparent;
-    color: #d5df4d;;
+    color: #d5df4d;
     letter-spacing: .2em;
     font-weight:bold;
     border: 2px solid #d5df4d;;

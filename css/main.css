@@ -49,29 +49,42 @@ NAVIGATION
 ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   background-color: white;
   height: 10%;
-  position: fixed;
   width: 100%;
   top: 0;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
+
+
+
 }
 
 li {
 
 }
 
-li a {
+  #logo {
+    width: 50vw;
+    height: auto;
+    max-width: 200px;
+    max-height: auto;
 
-  text-decoration: none;
-  color: background-color: rgb(213,223,77);
-  font-weight: bold;
-  font-size: 1.3em;
-  letter-spacing: .3em;
+
+  }
+
+#hamburger {
+
+  height: 35px;
+  width: 35px;
+  float: right;
+  margin: 5% 13%;
+
+
 }
+
 
 /****************************
 CONTAINERS
@@ -86,9 +99,11 @@ CONTAINERS
 
 }
 
+
 .primary {
   text-align: center;
-  margin-top: 240px;
+  margin-top: 3%;
+
 
 
 }
@@ -126,7 +141,7 @@ BUTTON
 
 }
 .button1:hover {
-    background-color: #d5df4d;;
+    background-color: #d5df4d;
     color: white;
     text-shadow: 1px 1px 2px #000000;
 }
@@ -150,11 +165,11 @@ POPUP FORM
 /* Modal Content/Box */
 .regForm {
     background-color: #fefefe;
-    margin: 10% auto; /* 15% from the top and centered */
+   /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     border-radius: 3%;
-    width: 40%; /* Could be more or less, depending on screen size */
+    width: 100%; /* Could be more or less, depending on screen size */
     text-align: justify;
 }
 
@@ -164,6 +179,7 @@ POPUP FORM
     float: right;
     font-size: 28px;
     font-weight: bold;
+    margin: 3% 5%;
 }
 
 .close:hover,
@@ -173,14 +189,6 @@ POPUP FORM
     cursor: pointer;
 }
 
-#logo {
-  width: 50vw;
-  height: auto;
-  display: block;
-  max-width: 200px;
-  max-height: auto;
-
-}
 
 .icon {
   color: #d5df4d;

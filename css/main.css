@@ -1,5 +1,5 @@
 
-body {
+.homePage {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
@@ -10,7 +10,7 @@ body {
 }
 
 /****************************
-HEADERS
+HEADERS && PARAGRAPHS
 ***************************/
 
 h1 {
@@ -18,16 +18,16 @@ h1 {
   text-shadow: 4px 4px 8px #000000;
   font-weight: bold;
   letter-spacing: .1em;
-  font-size: 3.25em;
+  font-size: 4em;
 }
 
 h2 {
   color: white;
-  margin: -5px 0px 30px 0px;
+  margin: 20px 0px 30px 0px;
   text-shadow: 4px 4px 8px #000000;
   font-weight: bold;
   letter-spacing: .1em;
-  font-size: 1em;
+  font-size: 1.75em;
 }
 
 h3 {
@@ -38,54 +38,49 @@ h3 {
 
 h4 {
   color: #d5df4d;
-  font-weight: bold;
-  font-size: 2em;
+  font-size: 3em;
+  font-family: 'Open Sans', sans-serif;
 }
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4em;
+  color: 	#A9A9A9;
+  text-align: left;
+
+}
+
 
 /****************************
 NAVIGATION
 ***************************/
-/*
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0 auto;
-  background-color: white;
-  height: 10%;
-  width: 100%;
-  top: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  z-index: 20;
-}
-*/
 
 ul {
-
   color: #d5df4d;
-}
 
+
+}
 
 
 .navbar {
   background-color: white;
   border-color: white;
-
 }
 
 .navbar-inverse .navbar-nav > li > a {
   color : #d5df4d;
   font-weight: bold;
-
   font-family: 'Open Sans', sans-serif;
   font-size: 2em;
+  letter-spacing: .5em;
   display: block;
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle {
     background-color: #d5df4d;
     border-style: none;
+    margin-top: 18px;
+
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
@@ -98,22 +93,18 @@ ul {
     height: auto;
     max-width: 200px;
     max-height: auto;
-    margin-top: 8%;
-
-
-  }
-
-#hamburger {
-
-  height: 35px;
-  width: 35px;
-  float: right;
-  margin: 5% 13%;
-
+    margin-top: 4%;
 
 }
 
+#logoMini {
+  height: 20%;
+  width: auto;
+  margin-left: auto;
+  margin-right; auto;
 
+
+}
 /****************************
 CONTAINERS
 ***************************/
@@ -127,13 +118,15 @@ CONTAINERS
 
 }
 
-
 .primary {
   text-align: center;
   margin-top: -20px;
 
+}
 
-
+.aboutDiv {
+  text-align: center;
+  margin: 0 10%;
 
 }
 
@@ -142,11 +135,14 @@ CONTAINERS
 BUTTON
 ***************************/
 
-
 .button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
+    background-color: transparent;
+    color: #d5df4d;
+    letter-spacing: .2em;
+    font-weight:bold;
+    border: 2px solid #d5df4d;;
+    border-radius: 4px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     padding: 20px 28px;
     text-align: center;
     text-decoration: none;
@@ -155,21 +151,9 @@ BUTTON
     margin: 4px 2px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
-    cursor: pointer;
 
 }
-
-.button1 {
-    background-color: transparent;
-    color: #d5df4d;
-    letter-spacing: .2em;
-    font-weight:bold;
-    border: 2px solid #d5df4d;;
-    border-radius: 4px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-
-}
-.button1:hover {
+.button:hover {
     background-color: #d5df4d;
     color: white;
     text-shadow: 1px 1px 2px #000000;
@@ -218,8 +202,15 @@ POPUP FORM
     cursor: pointer;
 }
 
+/****************************
+ABOUT PAGE
+***************************/
 
-.icon {
-  color: #d5df4d;
-  position: absolute;
+.aboutPage {
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  background-color: #fffff4;
+
+
 }

@@ -1,5 +1,8 @@
 
+
 $(document).ready(function() {
+
+// Register Button
 
 var formModal = document.getElementById("formModal");
 
@@ -20,10 +23,12 @@ window.onclick = function(event) {
         formModal.style.display = "none";
     }
 }
+
+// Submit Button
+
+var formSubmit = document.getElementById("formSubmit");
+
+formSubmit.onclick = function() {
+    alert("You just submitted something to nothingness");
+}
 });
-
-// Hover overlay
-$document.ready(function() {
-  var overlaySecondary = document.getElementsByClassName("imgOverlay");
-
-})

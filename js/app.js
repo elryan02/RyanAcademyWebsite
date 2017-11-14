@@ -1,7 +1,3 @@
-
-
-$(document).ready(function() {
-
 // Register Button
 
 var formModal = document.getElementById("formModal");
@@ -9,6 +5,8 @@ var formModal = document.getElementById("formModal");
 var regBtn = document.getElementById("regBtn");
 
 var span = document.getElementsByClassName("formClose")[0];
+
+var formSubmit = document.getElementById("formSubmit");
 
 regBtn.onclick = function() {
     formModal.style.display = "block";
@@ -23,12 +21,8 @@ window.onclick = function(event) {
         formModal.style.display = "none";
     }
 }
-
 // Submit Button
 
-var formSubmit = document.getElementById("formSubmit");
-
 formSubmit.onclick = function() {
-    alert("You just submitted something to nothingness");
+    alert("Congratulations! You just submitted something into the void!");
 }
-});

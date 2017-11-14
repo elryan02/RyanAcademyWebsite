@@ -174,10 +174,17 @@ POPUP FORM
     padding: 20px;
     border: 1px solid #888;
     border-radius: 25px;
+    border-color: transparent;
     width: 50%;
     min-width: 450px;
     text-align: justify;
     overflow-x: hidden;
+}
+
+.regForm.fixed {
+
+    width: 80%;
+
 }
 
 .formClose {
@@ -195,7 +202,7 @@ POPUP FORM
 }
 
 .formContent {
-  margin: 5% 10%;
+  margin: 5% 7%;
 }
 
 input[type="text"] {

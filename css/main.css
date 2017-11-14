@@ -42,8 +42,6 @@ h4 {
   font-size: 2.5vw;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  letter-spacing: .1em;
-
 }
 
 p {
@@ -142,7 +140,7 @@ BUTTON
 
 .button.submit {
     font-size: 15px;
-    margin: 0 auto;
+    margin: 8% auto;
     display: block;
     padding: 10px 10px;
 
@@ -167,17 +165,19 @@ POPUP FORM
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+
 }
 
 .regForm {
     background-color: #fffff4;
-    margin: 5% auto;
+    margin: 1% auto;
     padding: 20px;
     border: 1px solid #888;
     border-radius: 25px;
     width: 50%;
     min-width: 450px;
     text-align: justify;
+    overflow-x: hidden;
 }
 
 .formClose {
@@ -195,11 +195,12 @@ POPUP FORM
 }
 
 .formContent {
-  margin: 10%;
+  margin: 5% 10%;
 }
 
-input {
-  width: 40%;
+input[type="text"] {
+  width: 47%;
+  margin-right: 2%;
 }
 
 /****************************

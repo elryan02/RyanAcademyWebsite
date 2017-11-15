@@ -8,7 +8,7 @@
 
   </head>
 
-  <body class="body home">
+  <body class="body index">
 
     <!-- navigation -->
 
@@ -36,7 +36,6 @@
 
 
     <div class="overlay">
-      <div class="primary">
         <img src="https://i.imgur.com/41IXS5I.png" alt="Logo" id="logo">
         <h1>the ryan academy</h1>
         <h2>fostering integrity. preserving tradition.</h2>
@@ -45,29 +44,29 @@
         <button class="button" id="regBtn">register now</button>
 
         <!-- modal -->
+
         <div id="formModal" class="modal">
 
+        <div class="formContainer">
++
         <!-- form -->
 
-          <div class="regForm">
+
           <span class="formClose">&times;</span>
 
           <center><h4>fall 2018 registration form</h4></center>
-          <div class="formContent">
+
           <form action="index.html" method="post">
 
             <h3>dancer name</h3>
             <input type="text" id="firstName" placeholder="first name">
             <input type="text" id="lastName" placeholder="last name">
-
             <h3>gender</h3>
             <input type="radio" name="gender" value="male" checked> male<br>
             <input type="radio" name="gender" value="female"> female<br>
             <input type="radio" name="gender" value="other"> other
-
             <h3>dancer d.o.b</h3>
             <input type="date" id="bday">
-
             <h3>class selection</h3>
             <select name="classes">
             <option value="beginnerFive">Beginner (5+)</option>
@@ -75,14 +74,11 @@
             <option value="intermediate">Intermediate (instructor approval)</option>
             <option value="freeTrial">Free Trial</option>
             </select>
-
             <h3>parent/guardian name</h3>
             <input type="text" id="firstName" placeholder="first name">
             <input type="text" id="lastName" placeholder="last name">
-
             <h3>parent/guardian d.o.b</h3>
             <input type="date" id="bday">
-
             <h3>address</h3>
             <input type="text" id="addressOne" placeholder="address 1"><br><br>
             <input type="text" id="addressTwo" placeholder="address 2"><br><br>
@@ -92,20 +88,12 @@
             <input type="text" id="country" placeholder="country">
             <h3>phone</h3>
             <input type="tel" id="phone" placeholder="(555) 555-555">
-
-
-          </div>
           </form>
+
           <button id="formSubmit" class="button subm">Submit</button>
-          </div>
-
-</div>
-
-
-
-
-
-    </div> <!-- overlay div -->
+        </div> <!-- END modalContent div -->
+        </div> <!-- END formModal div -->
+    </div> <!-- END overlay div -->
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>

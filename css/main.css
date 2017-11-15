@@ -244,6 +244,10 @@ ABOUT PAGE
   width: 90vw;
 }
 
+.primaryImgMQ {
+  display: none;
+}
+
 .aboutDiv {
   margin: 8% 10% 0 10%;
   text-align: left;
@@ -281,16 +285,23 @@ Media Queries
     font-size: 2.4em;
   }
 
+/*
   .imgText {
     display: none;
   }
-
+*/
   #logoMini {
     display: block;
   }
 
-  .aboutImage {
+  .primaryImg {
     display: none;
+
+  }
+
+  .primaryImgMQ {
+    display: block;
+    width: 100vw;
   }
 
   .regForm {

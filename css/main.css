@@ -3,58 +3,70 @@ BODY
 ***************************/
 
 body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    background-color: #fffff4;
 }
 
 .body.index {
-  background-image: url("https://static1.squarespace.com/static/58b481f0d2b857c893183a60/t/59ce4e4fd55b41fadb48d0a6/1506692691847/Banner+Shoes.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    background-image: url("https://static1.squarespace.com/static/58b481f0d2b857c893183a60/t/59ce4e4fd55b41fadb48d0a6/1506692691847/Banner+Shoes.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /****************************
-HEADERS && PARAGRAPHS
+TEXT
 ***************************/
 
 p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.4em;
-  color: 	#A9A9A9;
-  text-align: left;
-
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4em;
+    color: 	#A9A9A9;
+    text-align: left;
 }
 
 h1 {
-  color: white;
-  text-shadow: 4px 4px 8px #000000;
-  font-weight: bold;
-  letter-spacing: .1em;
-  font-size: 4.75em;
+    color: white;
+    text-shadow: 4px 4px 8px #000000;
+    font-weight: bold;
+    letter-spacing: .1em;
+    font-size: 4.75em;
 }
 
 h2 {
-  color: white;
-  margin: 20px 0px 30px 0px;
-  text-shadow: 4px 4px 8px #000000;
-  font-weight: bold;
-  letter-spacing: .1em;
-  font-size: 1.75em;
+    color: white;
+    margin: 20px 0px 30px 0px;
+    text-shadow: 4px 4px 8px #000000;
+    font-weight: bold;
+    letter-spacing: .1em;
+    font-size: 1.75em;
 }
 
 h3 {
-  color: #d5df4d;
-  font-weight: bold;
-  font-size: 2em;
+    color: #d5df4d;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 h4 {
-  color: #d5df4d;
-  font-size: 2.5vw;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
+    color: #d5df4d;
+    font-size: 2.5vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.imgText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 4px 4px 8px #000000;
+    font-weight: bold;
+    line-height: 110%;
+    font-size: 4.75vw;
 }
 
 /****************************
@@ -62,28 +74,28 @@ NAVIGATION
 ***************************/
 
 .navbar {
-  background-color: #fffff4;
-  border-color: #fffff4;
+    background-color: #fffff4;
+    border-color: #fffff4;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color : #d5df4d;
-  font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
-  text-align: justify;
-  font-size: 1.75em;
-  letter-spacing: .5em;
+    color : #d5df4d;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    font-size: 1.75em;
+    letter-spacing: .5em;
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle {
-  background-color: #d5df4d;
-  border-style: none;
-  margin-top: 18px;
+    background-color: #d5df4d;
+    border-style: none;
+    margin-top: 18px;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-  color: #fffff4;
-  background-color: #d5df4d;
+    color: #fffff4;
+    background-color: #d5df4d;
 }
 
 /****************************
@@ -100,9 +112,26 @@ CONTAINERS
 }
 
 .imageContainer {
-  position: relative;
-  text-align: center;
-  color: white;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.flexContainer {
+    margin: 10% 10%;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+}
+
+.primaryCol {
+    margin: 0 5%;
+}
+
+.secondaryCol {
+    flex: 3;
+    min-width: 20vw;
+    margin: 0 5%;
 }
 
 /****************************
@@ -160,10 +189,10 @@ FORM
     border: 1px solid #888;
     border-radius: 25px;
     border-color: transparent;
-    min-width: 450px;
     text-align: justify;
     overflow-x: hidden;
     width: 60%;
+    min-width: 60%;
 }
 
 .formClose {
@@ -171,6 +200,7 @@ FORM
     float: right;
     font-size: 28px;
     font-weight: bold;
+    margin-right: 2%;
 }
 
 .formClose:hover, .formClose:focus {
@@ -180,87 +210,51 @@ FORM
 }
 
 form {
-  margin: 5% 7%;
+    margin: 5% 7%;
+}
+
+input {
+    margin: 3% 1% 3% 0;
 }
 
 input[type="text"] {
-  width: 47%;
-  margin-right: 2%;
+    width: 46%;
 }
-
-/****************************
-ABOUT/CLASSES/REGISTER PAGES
-***************************/
-
-
-
-
-
-.aboutDiv {
-  margin: 8% 10% 0 10%;
-  text-align: left;
-  display: flex;
-  align-items: flex-start;
-}
-
-.primaryCol {
-  margin: 5% 10%;
-}
-
-.secondaryCol {
-  flex: 3;
-  margin: 0 5%;
-  min-width: 20vw;
-}
-
-
-
 
 /****************************
 Images
 ***************************/
 
 #logo {
-  width: 50vw;
-  height: auto;
-  max-width: 200px;
-  max-height: auto;
-  margin-top: 4%;
+    width: 50vw;
+    height: auto;
+    max-width: 200px;
+    max-height: auto;
+    margin-top: 4%;
 }
 
 #logoMini {
-  height: 20%;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: none;
+    height: 20%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
 }
 
 #director {
-  margin-bottom: -4.5%;
-  width: 100%;
-  border-radius: 2px;
+    margin-bottom: -4.5%;
+    width: 100%;
+    border-radius: 2px;
 }
 
 .primaryImg {
-  width: 90vw;
+    width: 90vw;
 }
 
 .primaryImgMQ {
-  display: none;
+    display: none;
 }
 
-.imgText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 4px 4px 8px #000000;
-  font-weight: bold;
-  line-height: 110%;
-  font-size: 4.75vw;
-}
 
 /****************************
 Media Queries
@@ -268,41 +262,53 @@ Media Queries
 
 @media (max-width: 580px) {
 
-  .aboutDiv {
-    display: block;
+  .flexContainer {
+        display: block;
+  }
+
+  .formContainer {
+        border-radius: 25px;
+        width: 95%;
+        min-width: auto;
+        margin: 2% auto;
   }
 
   h4 {
-    font-size: 2.4em;
-    margin: 10% 0;
+        font-size: 2.4em;
+        margin: 10% 0;
   }
 
   h3 {
-    font-size: 2.4em;
-    margin: 10% 0;
+        font-size: 2.4em;
+        margin: 10% 0;
+  }
+
+  br {
+        display: none;
   }
 
   #logoMini {
-    display: block;
+        display: block;
+  }
+
+  #director {
+        max-width: 300px;
   }
 
   .primaryImg {
-    display: none;
-
+        display: none;
   }
 
   .primaryImgMQ {
-    display: block;
-    width: 100vw;
+        display: block;
+        width: 100vw;
   }
 
-  .modalContent {
-      border-radius: 25px;
-      width: 95%;
-      min-width: auto;
-      margin: 2% auto;
+@media (max-width: 350px) {
+
+    input[type=text] {
+        display: block;
+        width: 100%;
   }
 
-#director {
-  max-width: 300px;
 }

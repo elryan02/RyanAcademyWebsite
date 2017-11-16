@@ -28,5 +28,4 @@ var formSubmit = document.getElementById("formSubmit");
 
 $("#formSubmit").click(function(){
     alert("Congratulations! You just submitted something into the void!");
-    formModal.style.display = "none";
 });

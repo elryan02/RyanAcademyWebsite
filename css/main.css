@@ -3,7 +3,7 @@ BODY
 ***************************/
 
 body {
-    margin: 0;
+    margin: 0 0 5% 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
     background-color: #fffff4;
@@ -14,6 +14,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: 0;
 }
 
 /****************************
@@ -22,6 +23,7 @@ TEXT
 
 p {
     font-family: 'Open Sans', sans-serif;
+    margin: 3% 0;
     font-size: 1.4em;
     color: 	#A9A9A9;
     text-align: left;
@@ -111,14 +113,14 @@ CONTAINERS
     margin-top: -20px;
 }
 
-.imageContainer {
+.imgContainer {
     position: relative;
     text-align: center;
     color: white;
 }
 
 .flexContainer {
-    margin: 10% 10%;
+    margin: 5% 10%;
     text-align: left;
     display: flex;
     align-items: flex-start;
@@ -126,6 +128,10 @@ CONTAINERS
 
 .primaryCol {
     margin: 0 5%;
+}
+
+.primaryCol.classes {
+  margin: 0 10%;
 }
 
 .secondaryCol {
@@ -167,6 +173,14 @@ BUTTON
     background-color: #d5df4d;
     color: white;
     text-shadow: 1px 1px 2px #000000;
+}
+
+.button.solid {
+  padding: 15px 23px;
+}
+
+.button.solid:hover {
+    text-shadow: none;
 }
 
 /****************************
@@ -255,6 +269,26 @@ Images
     display: none;
 }
 
+/****************************
+TABLE
+***************************/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, td, th {
+    border-color: transparent;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: 	#A9A9A9;
+    padding: 1% 0;
+}
+
+th {
+    text-align: left;
+}
 
 /****************************
 Media Queries

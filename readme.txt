@@ -1,3 +1,3 @@
 Emma L. Ryan 11/16/2017
 
-Website for The Ryan Academy of Irish Dance. This is my final project for Code Louisville's front end web development track..
+A website created for The Ryan Academy, an Irish Dance studio based in New Albany, Indiana. I created this website to showcase my ability to utilize HTML, CSS, and Jquery.
